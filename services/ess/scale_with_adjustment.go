@@ -82,6 +82,7 @@ type ScaleWithAdjustmentRequest struct {
 	SpotStrategy           string           `position:"Query" name:"SpotStrategy"`
 	VSwitchId              *[]string        `position:"Query" name:"VSwitchId"  type:"Repeated"`
 	MinAdjustmentMagnitude requests.Integer `position:"Query" name:"MinAdjustmentMagnitude"`
+	ParallelTask		   requests.Boolean `position:"Query" name:"ParallelTask"`
 }
 
 // ScaleWithAdjustmentResponse is the response struct for api ScaleWithAdjustment
